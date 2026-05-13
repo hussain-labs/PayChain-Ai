@@ -40,23 +40,32 @@ export const CONTRACTS = {
 }
 
 // ── API Endpoints ─────────────────────────────────────────────────────────────
-// TODO (Phase 2): Replace with live backend / Gemini API URLs
+// Phase 2: Backend is now live at http://localhost:4000/api/v1
+// Override with VITE_API_BASE_URL in your frontend .env.local for staging/prod.
 export const API = {
   BASE_URL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:4000/api/v1',
 
-  // Gemini AI endpoints
-  GEMINI: {
-    BASE:          import.meta.env.VITE_GEMINI_API_URL || 'https://generativelanguage.googleapis.com/v1beta',
-    TRUST_SCORE:   '/models/gemini-pro:generateContent',  // ← Phase 2
-    FRAUD_DETECT:  '/models/gemini-pro:generateContent',  // ← Phase 2
-    XAI_REPORT:    '/models/gemini-pro:generateContent',  // ← Phase 2
-  },
-
-  // Internal backend endpoints
+  // ── Backend REST routes (Phase 2 live) ─────────────────────────────────────
+  MERCHANTS:    '/merchants',
   TRANSACTIONS: '/transactions',
   DISPUTES:     '/disputes',
-  MERCHANT:     '/merchant',
   ANALYTICS:    '/analytics',
+
+  // ── AI Intelligence routes ─────────────────────────────────────────────────
+  AI: {
+    STATUS:        '/ai/status',          // GET  — service health
+    STATUS_REPORT: '/ai/status-report',   // POST — Gemini merchant report ✓ Phase 2
+    RISK:          '/ai/risk',            // POST /ai/risk/:txId          — Phase 3
+    TRUST:         '/ai/trust',           // POST /ai/trust/:wallet       — Phase 3
+    XAI:           '/ai/xai',             // GET  /ai/xai/:txId           — Phase 3
+  },
+
+  // ── Analytics routes ───────────────────────────────────────────────────────
+  ANALYTICS_ROUTES: {
+    OVERVIEW:        '/analytics/overview',
+    SALES_TREND:     '/analytics/sales-trend',
+    WEEKLY_REVENUE:  '/analytics/weekly-revenue',
+  },
 }
 
 // ── WalletConnect Project ID ──────────────────────────────────────────────────
