@@ -46,7 +46,7 @@ const ClassicLms = ({ blogdata }) => {
                       href="#"
                     >
                       <span className="icon-reverse-wrapper">
-                        <span className="btn-text">View Course</span>
+                        <span className="btn-text">Join Now</span>
                         <span className="btn-icon">
                           <i className="feather-arrow-right"></i>
                         </span>
