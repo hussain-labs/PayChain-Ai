@@ -43,7 +43,7 @@ const ClassicLms = ({ blogdata }) => {
                   <div className="slider-btn">
                     <Link
                       className="rbt-btn btn-gradient hover-icon-reverse"
-                      href="#"
+                      href="/login"
                     >
                       <span className="icon-reverse-wrapper">
                         <span className="btn-text">Join Now</span>
