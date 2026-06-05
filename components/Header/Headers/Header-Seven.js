@@ -8,7 +8,6 @@ import logo from "../../../public/images/logo/logo.png";
 import logoLight from "../../../public/images/dark/logo/logo-light.png";
 
 import Nav from "../Nav";
-import Category from "../Category/Category";
 import { useAppContext } from "@/context/Context";
 
 const HeaderSeven = ({
@@ -72,7 +71,6 @@ const HeaderSeven = ({
                 </div>
               </div>
               <div className="header-info d-none d-lg-block">
-                <Category />
               </div>
             </div>
 
