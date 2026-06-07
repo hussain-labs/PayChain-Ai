@@ -802,6 +802,16 @@
             background-repeat: no-repeat;
         }
 
+        .language-world {
+            .flages {
+                border-color: var(--color-bodyest);
+
+                .flag {
+                    background-color: var(--color-bodyest-2);
+                }
+            }
+        }
+
         .content {
             .inner {
                 .title {
@@ -3740,5 +3750,15 @@
     .service-select {
         background-color: transparent;
         border-color: var(--dark-color-border);
+    }
+
+    .language-world {
+        .flages {
+            border-color: var(--color-bodyest);
+
+            .flag {
+                background-color: var(--color-bodyest-2);
+            }
+        }
     }
 }

@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import sal from "sal.js";
 import HomeCourse from "../01-Main-Demo/Home-Sections/HomeCourse";
 import NewsletterThree from "../Newsletters/Newsletter-Three";
@@ -10,6 +11,22 @@ import BlogGrid from "../Blogs/BlogGrid";
 import Instagram from "../Instagram/Instagram";
 import TestimonialFour from "../Testimonials/Testimonial-Four";
 import CategorySix from "../Category/CategorySix";
+
+import worldImg from "../../public/images/shape/world.png";
+
+const countryFlag = [
+  { country: "Australia", image: "/images/shape/flag-australia.png" },
+  { country: "Canada", image: "/images/shape/flag-canada.png" },
+  { country: "China", image: "/images/shape/flag-china.png" },
+  { country: "France", image: "/images/shape/flag-french.png" },
+  { country: "Germany", image: "/images/shape/flag-germany.png" },
+  { country: "Japan", image: "/images/shape/flag-japan.png" },
+  { country: "Korea", image: "/images/shape/flag-korea.png" },
+  { country: "Pakistan", image: "/images/shape/flag-pakistan.png" },
+  { country: "Sri Lanka", image: "/images/shape/flag-srilonka.png" },
+  { country: "United Kingdom", image: "/images/shape/flag-uk.png" },
+  { country: "United States", image: "/images/shape/flag-usa.png" },
+];
 
 const ClassicLms = ({ blogdata }) => {
   useEffect(() => {
@@ -21,6 +38,30 @@ const ClassicLms = ({ blogdata }) => {
   return (
     <>
       <div className="rbt-banner-area rbt-banner-1 variation-2 height-750">
+        <div className="hero-bg-animation">
+          <div className="language-world">
+            <div className="world">
+              <Image src={worldImg} width={441} height={442} alt="Earth Globe" />
+            </div>
+            <div className="flages">
+              {countryFlag.map((flag, index) => (
+                <div
+                  className="flag"
+                  key={index}
+                  data-tooltip={flag.country}
+                  tabIndex={0}
+                >
+                  <Image
+                    src={flag.image}
+                    alt={flag.country}
+                    width={50}
+                    height={50}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
         <div className="container">
           <div className="row justify-content-between align-items-center">
             <div className="col-lg-8">
