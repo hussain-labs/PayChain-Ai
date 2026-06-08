@@ -1,12 +1,7 @@
 "use client";
 
-import BreadCrumb from "@/components/Common/BreadCrumb";
-import FooterOne from "@/components/Footer/Footer-One";
-import HeaderStyleTen from "@/components/Header/HeaderStyle-Ten";
-import MobileMenu from "@/components/Header/MobileMenu";
-import Cart from "@/components/Header/Offcanvas/Cart";
+import Link from "next/link";
 import Login from "@/components/Login/Login";
-import NewsletterThree from "@/components/Newsletters/Newsletter-Three";
 import Context from "@/context/Context";
 import Store from "@/redux/store";
 import React from "react";
@@ -17,24 +12,14 @@ const LoginPage = () => {
     <>
       <Provider store={Store}>
         <Context>
-          <HeaderStyleTen headerSticky="rbt-sticky" headerType="" />
-          <MobileMenu />
-          <Cart />
-          <BreadCrumb title="Login & Register" text="Login & Register" />
-
-          <div className="rbt-elements-area bg-color-white rbt-section-gap">
-            <div className="container">
-              <div className="row gy-5 row--30">
-                <Login />
-              </div>
+          <div className="login-page-wrapper d-flex align-items-center justify-content-center min-vh-100">
+            <Link href="/" className="login-back-home-btn">
+              <i className="feather-arrow-left"></i> Back to Home
+            </Link>
+            <div className="container py-5">
+              <Login />
             </div>
           </div>
-
-          <div className="rbt-newsletter-area bg-gradient-6 ptb--50">
-            <NewsletterThree />
-          </div>
-
-          <FooterOne />
         </Context>
       </Provider>
     </>

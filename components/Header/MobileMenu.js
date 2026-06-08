@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import logo from "../../public/images/logo/logo.png";
+import Logo from "./Logo";
 
 import Nav from "./Nav";
 import { useAppContext } from "@/context/Context";
@@ -20,12 +20,7 @@ const MobileMenu = () => {
             <div className="content">
               <div className="logo">
                 <Link href="/">
-                  <Image
-                    src={logo}
-                    width={137}
-                    height={45}
-                    alt="Education Logo Images"
-                  />
+                  <Logo />
                 </Link>
               </div>
               <div className="rbt-btn-close">
@@ -38,12 +33,12 @@ const MobileMenu = () => {
               </div>
             </div>
             <p className="description">
-              Histudy is a education website template. You can customize all.
+              PayChain AI is a modern blockchain fraud detection and protection platform.
             </p>
             <ul className="navbar-top-left rbt-information-list justify-content-start">
               <li>
-                <Link href="mailto:hello@example.com">
-                  <i className="feather-mail"></i>example@gmail.com
+                <Link href="mailto:paychainai@hotmail.com">
+                  <i className="feather-mail"></i>paychainai@hotmail.com
                 </Link>
               </li>
               <li>

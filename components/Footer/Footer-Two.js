@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import logo from "../../public/images/logo/logo.png";
-import logoLight from "../../public/images/dark/logo/logo-light.png";
+import Logo from "../Header/Logo";
 import { useAppContext } from "@/context/Context";
 
 const FooterTwo = () => {
@@ -16,23 +15,7 @@ const FooterTwo = () => {
               <div className="inner text-center">
                 <div className="logo">
                   <Link href="/">
-                    {isLightTheme ? (
-                      <Image
-                        src={logo}
-                        width={152}
-                        height={50}
-                        priority={true}
-                        alt="Education Logo Images"
-                      />
-                    ) : (
-                      <Image
-                        src={logoLight}
-                        width={152}
-                        height={50}
-                        priority={true}
-                        alt="Education Logo Images"
-                      />
-                    )}
+                    <Logo />
                   </Link>
                 </div>
 

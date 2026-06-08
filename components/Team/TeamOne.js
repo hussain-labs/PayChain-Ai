@@ -136,7 +136,7 @@ const TeamOne = () => {
                                 </Link>
                               </li>
                               <li>
-                                <Link href="mailto:hello@example.com">
+                                <Link href="mailto:paychainai@hotmail.com">
                                   <i className="feather-mail"></i>
                                   {item.email}
                                 </Link>

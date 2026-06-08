@@ -1,8 +1,10 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
-import logo from "../../public/images/logo/logo.png";
-import logoLight from "../../public/images/dark/logo/logo-light.png";
+import Logo from "../Header/Logo";
 import footerBg from "../../public/images/shape/islamic-footer-bg.png";
 import footerMoon from "../../public/images/shape/i-moon.png";
 import footerStar from "../../public/images/shape/i-star.png";
@@ -14,7 +16,14 @@ import SingleFooter from "./FooterProps/SingleFooter";
 import { useAppContext } from "@/context/Context";
 
 const FooterOne = ({ isBox, bgColor, newsletterBorder, islamic }) => {
+  const pathname = usePathname();
   const { isLightTheme } = useAppContext();
+
+  const isDashboard = pathname && (pathname.startsWith("/instructor-") || pathname.startsWith("/student-"));
+  if (isDashboard) {
+    return null;
+  }
+
   
   return (
     <>
@@ -72,23 +81,7 @@ const FooterOne = ({ isBox, bgColor, newsletterBorder, islamic }) => {
                     <div className="footer-widget">
                       <div className="logo">
                         <Link href="/">
-                          {isLightTheme ? (
-                            <Image
-                              src={logo}
-                              width={152}
-                              height={50}
-                              priority={true}
-                              alt="Education Logo Images"
-                            />
-                          ) : (
-                            <Image
-                              src={logoLight}
-                              width={152}
-                              height={50}
-                              priority={true}
-                              alt="Education Logo Images"
-                            />
-                          )}
+                          <Logo />
                         </Link>
                       </div>
 
@@ -144,7 +137,7 @@ const FooterOne = ({ isBox, bgColor, newsletterBorder, islamic }) => {
                         </li>
                         <li>
                           <span>E-mail:</span>
-                          <Link href="mailto:hr@example.com">
+                          <Link href="mailto:paychainai@hotmail.com">
                             {footer.mail}
                           </Link>
                         </li>

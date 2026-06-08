@@ -71,7 +71,7 @@ const CallToAction = () => {
                         <div className="read-more-btn">
                           <Link
                             className="rbt-btn rbt-switch-btn btn-gradient btn-sm"
-                            href="#"
+                            href="/login"
                           >
                             <span data-text="Join Now">Join Now</span>
                           </Link>

@@ -10,6 +10,10 @@ import HeaderStyleTen from "@/components/Header/HeaderStyle-Ten";
 import MobileMenu from "@/components/Header/MobileMenu";
 import Cart from "@/components/Header/Offcanvas/Cart";
 import FooterOne from "@/components/Footer/Footer-One";
+import Link from "next/link";
+import CourseLessonProp from "@/components/11-single-course/CourseLessonProp";
+import SingleCourseData from "@/data/pages/11-singleCourse.json";
+import courseImg from "@/public/images/course/course-content.jpg";
 
 const ContactPage = () => {
   return (
@@ -38,7 +42,39 @@ const ContactPage = () => {
             </div>
           </div>
 
-          <ContactForm />
+          <ContactForm gap="rbt-section-gap" />
+
+          <div
+            className="rbt-course-content rbt-section-gap bg-color-extra2"
+            id="faq"
+          >
+            <div className="container">
+              <div className="row align-items-end mb--60">
+                <div className="col-lg-6 col-md-6">
+                  <div className="section-title text-start">
+                    <h2 className="title">Frequently Asked Questions</h2>
+                    <p className="description has-small-font-size mt--10">
+                      Find answers to all your queries here.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-lg-6 col-md-6">
+                  <div className="expend-button text-start text-md-end">
+                    <Link className="rbt-btn-link w-700" href="#">
+                      Expand all FAQ<i className="feather-arrow-right"></i>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row gy-5 row--30">
+                <CourseLessonProp
+                  courseImg={courseImg}
+                  courseContent={SingleCourseData.courseContent}
+                />
+              </div>
+            </div>
+          </div>
 
           <div className="rbt-google-map bg-color-white rbt-section-gapTop">
             <iframe

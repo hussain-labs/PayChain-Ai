@@ -91,9 +91,9 @@ const HeaderFive = ({
               </ul>
 
               <div className="rbt-btn-wrapper d-none d-xl-block ml--20">
-                <a className={`rbt-btn ${btnClass}`} href="#">
+                <Link className={`rbt-btn ${btnClass}`} href="/login">
                   <span data-text={`${btnText}`}>{btnText}</span>
-                </a>
+                </Link>
               </div>
 
               <div className="mobile-menu-bar d-block d-xl-none">

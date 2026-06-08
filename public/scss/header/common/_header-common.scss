@@ -12,6 +12,38 @@
     }
 }
 
+.paychain-logo-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    
+    .paychain-logo-svg {
+        flex-shrink: 0;
+    }
+    
+    .paychain-logo-text {
+        font-family: var(--font-primary, 'Euclid Circular A', 'Inter', sans-serif);
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        color: var(--color-heading);
+        transition: color 0.3s ease;
+        line-height: 1;
+
+        @media #{$large-mobile} {
+            font-size: 18px;
+        }
+
+        .theme-gradient {
+            background: linear-gradient(90deg, #5163FF 0%, #C586EE 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+    }
+}
+
 
 .rbt-header-top {
     position: relative;

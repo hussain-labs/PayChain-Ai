@@ -4,8 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-import logo from "../../../public/images/logo/logo.png";
-import logoLight from "../../../public/images/dark/logo/logo-light.png";
+import Logo from "../Logo";
 
 import Nav from "../Nav";
 import { useAppContext } from "@/context/Context";
@@ -50,23 +49,7 @@ const HeaderSeven = ({
               <div className="header-info">
                 <div className="logo">
                   <Link href="/">
-                    {isLightTheme ? (
-                      <Image
-                        src={logo}
-                        width={152}
-                        height={50}
-                        priority={true}
-                        alt="Education Logo Images"
-                      />
-                    ) : (
-                      <Image
-                        src={logoLight}
-                        width={152}
-                        height={50}
-                        priority={true}
-                        alt="Education Logo Images"
-                      />
-                    )}
+                    <Logo />
                   </Link>
                 </div>
               </div>
@@ -79,7 +62,7 @@ const HeaderSeven = ({
             </div>
             <div className="header-right">
               <div className="rbt-btn-wrapper d-none d-xl-block">
-                <Link className={`rbt-btn ${btnClass}`} href="#">
+                <Link className={`rbt-btn ${btnClass}`} href="/login">
                   <span data-text={`${btnText}`}>{btnText}</span>
                 </Link>
               </div>

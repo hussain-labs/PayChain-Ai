@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import MenuData from "../../data/MegaMenu.json";
 
@@ -16,8 +16,30 @@ import addImage from "../../public/images/service/mobile-cat.jpg";
 
 const Nav = () => {
   const [activeMenuItem, setActiveMenuItem] = useState(null);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const pathname = usePathname();
+
+  useEffect(() => {
+    const checkLoginStatus = () => {
+      try {
+        if (typeof window !== "undefined") {
+          const logged = localStorage.getItem("user-logged-in") === "true";
+          setIsLoggedIn(logged);
+        }
+      } catch (e) {}
+    };
+
+    checkLoginStatus();
+
+    window.addEventListener("storage", checkLoginStatus);
+    window.addEventListener("user-login-status-change", checkLoginStatus);
+
+    return () => {
+      window.removeEventListener("storage", checkLoginStatus);
+      window.removeEventListener("user-login-status-change", checkLoginStatus);
+    };
+  }, []);
 
   const isActive = (href) => pathname.startsWith(href);
 
@@ -38,50 +60,51 @@ const Nav = () => {
         </li>
 
 
-        <li className="has-dropdown has-menu-child-item">
-          <Link
-            className={`${activeMenuItem === "dashboard" ? "open" : ""}`}
-            href="#"
-            onClick={() => toggleMenuItem("dashboard")}
-          >
-            Dashboard
-            <i className="feather-chevron-down"></i>
-          </Link>
-          <ul
-            className={`submenu ${
-              activeMenuItem === "dashboard" ? "active d-block" : ""
-            }`}
-          >
-            {MenuData &&
-              MenuData.menuData.map((data, index) => {
-                if (data.menuType === "default-dropdown") {
-                  const elements = data.menuItems?.map((value, innerIndex) => (
-                    <li className="has-dropdown" key={innerIndex}>
-                      <Link href="#">{value.title}</Link>
-                      <ul className="submenu">
-                        {value.submenuItems?.map(
-                          (submenuItem, submenuItemIndex) => (
-                            <li key={submenuItemIndex}>
-                              <Link
-                                className={
-                                  isActive(submenuItem.link) ? "active" : ""
-                                }
-                                href={submenuItem.link}
-                              >
-                                {submenuItem.title}
-                              </Link>
-                            </li>
-                          )
-                        )}
-                      </ul>
-                    </li>
-                  ));
-                  return elements;
-                }
-                return null;
-              })}
-          </ul>
-        </li>
+        {isLoggedIn && (
+          <li className="has-dropdown has-menu-child-item">
+            <Link
+              className={`${activeMenuItem === "dashboard" ? "open" : ""}`}
+              href="#"
+              onClick={() => toggleMenuItem("dashboard")}
+            >
+              Dashboard
+              <i className="feather-chevron-down"></i>
+            </Link>
+            <ul
+              className={`submenu ${activeMenuItem === "dashboard" ? "active d-block" : ""
+                }`}
+            >
+              {MenuData &&
+                MenuData.menuData.map((data, index) => {
+                  if (data.menuType === "default-dropdown") {
+                    const elements = data.menuItems?.map((value, innerIndex) => (
+                      <li className="has-dropdown" key={innerIndex}>
+                        <Link href="#">{value.title}</Link>
+                        <ul className="submenu">
+                          {value.submenuItems?.map(
+                            (submenuItem, submenuItemIndex) => (
+                              <li key={submenuItemIndex}>
+                                <Link
+                                  className={
+                                    isActive(submenuItem.link) ? "active" : ""
+                                  }
+                                  href={submenuItem.link}
+                                >
+                                  {submenuItem.title}
+                                </Link>
+                              </li>
+                            )
+                          )}
+                        </ul>
+                      </li>
+                    ));
+                    return elements;
+                  }
+                  return null;
+                })}
+            </ul>
+          </li>
+        )}
         <li>
           <Link
             className={pathname === "/contact" ? "active" : ""}

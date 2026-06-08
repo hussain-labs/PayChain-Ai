@@ -27,8 +27,8 @@ const HeaderTopSeven = ({ gapSpaceBetween, bgColor, flexDirection }) => {
                         </a>
                       </li>
                       <li>
-                        <a href="mailto:hello@example.com">
-                          <i className="feather-mail"></i>example@gmail.com
+                        <a href="mailto:paychainai@hotmail.com">
+                          <i className="feather-mail"></i>paychainai@hotmail.com
                         </a>
                       </li>
                       <li>

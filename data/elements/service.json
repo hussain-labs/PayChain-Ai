@@ -1,11 +1,11 @@
 {
   "serviceOne": [
     {
-      "sectionTitle": "Style One.",
+      "sectionTitle": "Key Platform Features",
       "body": [
         {
-          "title": "Best Coaching",
-          "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima error reiciendis.",
+          "title": "Real-Time AI Scan",
+          "desc": "Scan millions of decentralized block transactions instantly for phishing and smart contract hacks.",
           "img": "/images/icons/card-icon-1.png",
           "bgOne": true,
           "bgTwo": false,
@@ -13,8 +13,8 @@
           "bgFour": false
         },
         {
-          "title": "Convenient practice",
-          "desc": "Convenient practice dolor sit adipisicing elit. Minima error reiciendis.",
+          "title": "Zero False Positives",
+          "desc": "Proprietary machine learning models verify risk scoring to maintain ultra-precise transaction processing.",
           "img": "/images/icons/card-icon-2.png",
           "bgTwo": true,
           "bgOne": false,
@@ -22,8 +22,8 @@
           "bgFour": false
         },
         {
-          "title": "Video Lecture",
-          "desc": "Video Lecture sit, amet consectetur adipisicing elit. Minima error reiciendis..",
+          "title": "Multi-Chain Safety",
+          "desc": "Deploy sensors seamlessly across Ethereum, BSC, Polygon, Solana, and EVM sub-networks.",
           "img": "/images/icons/card-icon-3.png",
           "bgThree": true,
           "bgOne": false,
@@ -31,8 +31,8 @@
           "bgFour": false
         },
         {
-          "title": "Live Class",
-          "desc": "Live Class dolor sit, amet consectetur adipisicing elit. Minima error reiciendis.",
+          "title": "Automated Shielding",
+          "desc": "Instantly block frontrunning bots and anomalous drainer scripts before blocks finalize.",
           "img": "/images/icons/card-icon-4.png",
           "bgFour": true,
           "bgOne": false,

@@ -40,19 +40,37 @@ const StudentDashboardSidebar = () => {
               <nav className="mainmenu-nav">
                 <ul className="dashboard-mainmenu rbt-default-sidebar-list">
                   {SidebarData &&
-                    SidebarData.siderbar.slice(7, 10).map((data, index) => (
-                      <li key={index}>
-                        <a
-                          href={data.link}
-                          className={`${
-                            pathname === data.link ? "active" : ""
-                          }`}
-                        >
-                          <i className={data.icon} />
-                          <span>{data.text}</span>
-                        </a>
-                      </li>
-                    ))}
+                    SidebarData.siderbar.slice(7, 10).map((data, index) => {
+                      const isLogout = data.text === "Logout";
+                      return (
+                        <li key={index}>
+                          {isLogout ? (
+                            <a
+                              href="#"
+                              onClick={(e) => {
+                                e.preventDefault();
+                                localStorage.setItem("user-logged-in", "false");
+                                window.dispatchEvent(new Event("user-login-status-change"));
+                                window.location.href = "/";
+                              }}
+                            >
+                              <i className={data.icon} />
+                              <span>{data.text}</span>
+                            </a>
+                          ) : (
+                            <a
+                              href={data.link}
+                              className={`${
+                                pathname === data.link ? "active" : ""
+                              }`}
+                            >
+                              <i className={data.icon} />
+                              <span>{data.text}</span>
+                            </a>
+                          )}
+                        </li>
+                      );
+                    })}
                 </ul>
               </nav>
             </div>

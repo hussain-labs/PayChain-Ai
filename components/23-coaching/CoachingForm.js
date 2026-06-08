@@ -83,8 +83,8 @@ const CoachingForm = () => {
                     </li>
                     <li>
                       <i className="feather-mail"></i>{" "}
-                      <Link href="mailto:zara.info@gmail.com">
-                        zara.info@gmail.com
+                      <Link href="mailto:paychainai@hotmail.com">
+                        paychainai@hotmail.com
                       </Link>
                     </li>
                   </ul>

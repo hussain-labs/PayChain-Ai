@@ -275,7 +275,7 @@
           "show": false,
           "collapsed": false,
           "btnText": "How can I get the customer support?",
-          "desc": "After purchasing the product need you any support you can be share with us with sending mail to rainbowit10@gmail.com."
+          "desc": "After purchasing the product need you any support you can be share with us with sending mail to paychainai@hotmail.com."
         },
         {
           "heading": "headingThree",
@@ -349,147 +349,66 @@
           "img": "/images/icons/facebook.png",
           "wtd": 50,
           "ht": 50,
-          "title": "Martha Maldonado",
-          "position": "CEO",
-          "desc": "After the launch, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit."
+          "title": "Alex Carter",
+          "position": "Lead Smart Contract Auditor",
+          "desc": "PayChain AI blocked a critical reentrancy exploit on our liquidity pool transaction within 2 seconds. Invaluable security!"
         },
         {
           "client": "/images/testimonial/client-02.png",
           "img": "/images/icons/google.png",
-          "title": "Michael D. Lovelady",
-          "position": "CEO",
-          "desc": "Histudy education, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit. Vestibulum eget risus velit."
+          "title": "Sarah Chen",
+          "position": "DeFi Protocol Founder",
+          "desc": "Integrating their RPC shield has reduced fake approval vectors and phishing attempts on our frontend dApp by 99%."
         },
         {
           "client": "/images/testimonial/client-03.png",
           "img": "/images/icons/yelp.png",
-          "title": "Valerie J. Creasman",
-          "position": "CEO",
-          "desc": "Our educational, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit nisi. "
+          "title": "Marcus Aurelius",
+          "position": "Node Validator Operator",
+          "desc": "The mempool threat analysis engine has completely filtered spam DDOS attacks, optimizing our validation performance."
         },
         {
           "client": "/images/testimonial/client-04.png",
           "img": "/images/icons/facebook.png",
           "wtd": 50,
           "ht": 50,
-          "title": "Hannah R. Sutton",
-          "position": "CEO",
-          "desc": "People says about, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit."
+          "title": "Liam O'Connor",
+          "position": "Core Security Engineer",
+          "desc": "Static Yul opcode analysis found compilation bugs that other security checkers completely missed. Highly recommend!"
         },
         {
           "client": "/images/testimonial/client-05.png",
           "img": "/images/icons/bing.png",
           "wtd": 50,
           "ht": 50,
-          "title": "Pearl B. Hill",
-          "position": "Marketing",
-          "desc": "Like this histudy, vulputate at sapien sit amet,auctor iaculis lorem. In vel hend rerit."
-        },
-        {
-          "client": "/images/testimonial/client-06.png",
-          "img": "/images/icons/facebook.png",
-          "wtd": 50,
-          "ht": 50,
-          "title": "Mandy F. Wood",
-          "position": "CEO",
-          "desc": "Educational template, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit."
-        },
-        {
-          "client": "/images/testimonial/client-07.png",
-          "img": "/images/icons/hubs.png",
-          "title": "Mildred W. Diaz",
-          "position": "Executive",
-          "desc": "Online leaning, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit."
-        },
-        {
-          "client": "/images/testimonial/client-08.png",
-          "img": "/images/icons/bing.png",
-          "wtd": 50,
-          "ht": 50,
-          "title": "Christopher H. Win",
-          "position": "CEO",
-          "desc": "Remote learning, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit."
-        },
-        {
-          "client": "/images/testimonial/client-09.png",
-          "img": "/images/icons/yelp.png",
-          "title": "Martha Maldonado",
-          "position": "SR Designer",
-          "desc": "University managemnet, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit nisi."
+          "title": "Jane Doe",
+          "position": "Token Project Lead",
+          "desc": "Their liquidity drain detection alert allowed us to temporarily pause withdrawals and prevent a catastrophic flash-loan attack."
         }
       ],
       "right": [
         {
-          "client": "/images/testimonial/client-01.png",
+          "client": "/images/testimonial/client-06.png",
           "img": "/images/icons/facebook.png",
           "wtd": 50,
           "ht": 50,
-          "title": "Martha Maldonado",
-          "position": "CEO",
-          "desc": "After the launch, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit."
-        },
-        {
-          "client": "/images/testimonial/client-02.png",
-          "img": "/images/icons/google.png",
-          "title": "Michael D. Lovelady",
-          "position": "CEO",
-          "desc": "Histudy education, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit. "
-        },
-        {
-          "client": "/images/testimonial/client-03.png",
-          "img": "/images/icons/yelp.png",
-          "title": "Valerie J. Creasman",
-          "position": "Executive Designer",
-          "desc": "Our educational, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit nisi."
-        },
-        {
-          "client": "/images/testimonial/client-04.png",
-          "img": "/images/icons/bing.png",
-          "wtd": 50,
-          "ht": 50,
-          "title": "Hannah R. Sutton",
-          "position": "Executive Chairman",
-          "desc": "People says about, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit."
-        },
-        {
-          "client": "/images/testimonial/client-05.png",
-          "img": "/images/icons/hubs.png",
-          "title": "Pearl B. Hill",
-          "position": "Chairman SR",
-          "desc": "Like this histudy, vulputate at sapien sit amet,auctor iaculis lorem. In vel hend rerit."
-        },
-        {
-          "client": "/images/testimonial/client-06.png",
-          "img": "/images/icons/yelp.png",
-          "title": "Mandy F. Wood",
-          "position": "SR Designer",
-          "desc": "Educational template, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit."
+          "title": "Klaus Werner",
+          "position": "L2 Rollup Tech Lead",
+          "desc": "Validating ZK circuit execution paths with PayChain AI ensures our rollups stay safe from double-spending exploits."
         },
         {
           "client": "/images/testimonial/client-07.png",
-          "img": "/images/icons/facebook.png",
-          "wtd": 50,
-          "ht": 50,
-          "title": "Mildred W. Diaz",
-          "position": "Executive Officer",
-          "company": "@ Yelp",
-          "desc": "Online leaning, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit."
+          "img": "/images/icons/google.png",
+          "title": "Fatima Zahra",
+          "position": "Risk Manager at Crypto Fund",
+          "desc": "The automatic wallet authorization revocation script shields our fund's cold wallets from unauthorized ERC-20 allowances."
         },
         {
           "client": "/images/testimonial/client-08.png",
-          "img": "/images/icons/bing.png",
-          "wtd": 50,
-          "ht": 50,
-          "title": "Christopher H. Win",
-          "position": "Product Designer",
-          "desc": "Remote learning, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit."
-        },
-        {
-          "client": "/images/testimonial/client-09.png",
           "img": "/images/icons/yelp.png",
-          "title": "Martha Maldonado",
-          "position": "Executive Chairman",
-          "desc": "University managemnet, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit."
+          "title": "Ravi Shastri",
+          "position": "Decentralized Bridge Developer",
+          "desc": "Real-time sync of mint/lock balance ratios prevents bridging imbalances and provides instant security alerting."
         }
       ]
     }

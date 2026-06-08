@@ -31,7 +31,7 @@ const CategorySix = () => {
                     <h5 className="title">{item.category}</h5>
                     <div className="read-more-btn">
                       <span className="rbt-btn-link">
-                        {count} Course{count !== 1 ? "s" : ""}
+                        {count} Detector{count !== 1 ? "s" : ""}
                         <i className="feather-arrow-right"></i>
                       </span>
                     </div>

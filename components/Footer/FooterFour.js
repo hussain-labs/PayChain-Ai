@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import logo from "../../public/images/logo/logo.png";
-import logoLight from "../../public/images/dark/logo/logo-light.png";
+import Logo from "../Header/Logo";
 
 import FooterData from "../../data/footer.json";
 import SingleFooter from "./FooterProps/SingleFooter";
@@ -23,23 +22,7 @@ const FooterFour = () => {
                     <div className="footer-widget">
                       <div className="logo">
                         <Link href="/">
-                          {isLightTheme ? (
-                            <Image
-                              src={logo}
-                              width={152}
-                              height={50}
-                              priority={true}
-                              alt="Education Logo Images"
-                            />
-                          ) : (
-                            <Image
-                              src={logoLight}
-                              width={152}
-                              height={50}
-                              priority={true}
-                              alt="Education Logo Images"
-                            />
-                          )}
+                          <Logo />
                         </Link>
                       </div>
 
@@ -94,7 +77,7 @@ const FooterFour = () => {
                         </li>
                         <li>
                           <span>E-mail:</span>
-                          <Link href="mailto:hr@example.com">
+                          <Link href="mailto:paychainai@hotmail.com">
                             {footer.mail}
                           </Link>
                         </li>
